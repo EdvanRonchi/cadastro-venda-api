@@ -1,0 +1,19 @@
+{
+  "name": "cadastro-api",
+  "version": "1.0.0",
+  "description": "Cadastro de pessoas, produtos e ordem de compra",
+  "main": "server.js",
+  "author": "Edvan Ronchi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "require-dir": "^1.2.0",
+    "sequelize": "^5.21.2"
+  },
+  "scripts": {
+    "start": "nodemon server"
+  }
+}
