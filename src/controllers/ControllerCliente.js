@@ -2,12 +2,8 @@ const Cliente = require('../models/Cliente')
 
 module.exports = {
     async findAll(req, res){
-        const { page = 1 } = req.query;
-        
-
         const cliente = await Cliente.findAll({
-            offset: (page-1)*10,
-            limit: 10
+            attributes: { exclude: ['createdAt', 'updatedAt'] }
         })
 
         return res.json(cliente);
